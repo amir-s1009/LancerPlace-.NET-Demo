@@ -136,3 +136,10 @@ public enum ConversationStatus
     CLOSED,
     SPAM
 }
+[JsonConverter(typeof(JsonStringEnumConverter<ModerationDuration>))]
+public enum ModerationDuration
+{
+    ONE_DAY,
+    ONE_WEEK,
+    ONE_MONTH,
+}
