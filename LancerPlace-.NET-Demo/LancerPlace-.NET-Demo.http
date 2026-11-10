@@ -1,0 +1,6 @@
+@LancerPlace_.NET_Demo_HostAddress = http://localhost:5255
+
+GET {{LancerPlace_.NET_Demo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
