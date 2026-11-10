@@ -1,0 +1,12 @@
+namespace LancerPlace_.NET_Demo.Src.Models;
+public class FinancialSupport
+{
+    public Guid Id { get; set; }
+    public Guid UserId { get; set; }
+    public string Description { get; set; } = null!;
+    public DateTime CreatedAt { get; set; }
+
+    public User User { get; set; } = null!;
+
+    public ICollection<Transaction> Transactions { get; set; } = [];
+}
