@@ -1,7 +1,7 @@
 namespace LancerPlace_.NET_Demo.Src.Models;
 public class ClientProfile
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     public string? Bio { get; set; }
     public Guid UserId { get; set; }
 

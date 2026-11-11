@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace LancerPlace_.NET_Demo.Src.Models;
 public class FreelancerProfile
 {
     public Guid Id { get; set; }
+    [MaxLength(1000, ErrorMessage = "متن درباره من خیلی طولانی است")]
     public string? Bio { get; set; }
     public Guid UserId { get; set; }
 
@@ -15,4 +18,5 @@ public class FreelancerProfile
     public ICollection<Endorsement> ReceivedEndorsements { get; set; } = [];
     public ICollection<Moderation> Moderations { get; set; } = [];
     public ICollection<Application> Applications { get; set; } = [];
+
 }

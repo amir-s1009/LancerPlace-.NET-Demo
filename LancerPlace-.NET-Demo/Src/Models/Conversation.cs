@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using LancerPlace.NET.Demo.Src.Enums;
 
 namespace LancerPlace_.NET_Demo.Src.Models;
@@ -5,6 +6,7 @@ public class Conversation
 {
     public Guid Id { get; set; }
     public Guid ApplicationId { get; set; }
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public DateTime CreatedAt { get; set; }
     public ConversationStatus Status { get; set; }
 

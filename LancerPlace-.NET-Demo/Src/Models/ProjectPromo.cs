@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using LancerPlace.NET.Demo.Src.Enums;
 
 namespace LancerPlace_.NET_Demo.Src.Models;
@@ -6,6 +7,7 @@ public class ProjectPromo
     public Guid Id { get; set; }
     public Guid ProjectId { get; set; }
     public ProjectPromoType Type { get; set; }
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public DateTime CreatedAt { get; set; }
     public DateTime? EndsAt { get; set; }
 
