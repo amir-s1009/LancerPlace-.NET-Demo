@@ -6,7 +6,7 @@ public class FreelancerProfileInfoDtoRes
 {
     public class SkillType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Title { get; set; } = null!;
     }
     public class CVType
@@ -23,7 +23,7 @@ public class UpdateFreelancerProfileInfoDtoReq
 {
     public class SkillType
     {
-        public string? Id { get; set; } = null!;
+        public Guid? Id { get; set; } = null!;
         public string Title { get; set; } = null!;
     }
     public string? bio { get; set; } = null!;

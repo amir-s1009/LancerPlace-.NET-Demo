@@ -22,7 +22,7 @@ public class EditMessageDtoReq
 
 public class MessageListItemDtoRes
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public MessageType Type { get; set; }
     public string? Text { get; set; } = null!;
     public FileDtoRes? File { get; set; } = null!;

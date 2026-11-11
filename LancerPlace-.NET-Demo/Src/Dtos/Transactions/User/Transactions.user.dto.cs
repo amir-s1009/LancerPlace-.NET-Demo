@@ -4,7 +4,7 @@ namespace LancerPlace_.NET_Demo.Src.Dtos.Transactions.User;
 
 public class TransactionListItemDtoRes
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public string Type { get; set; } = null!;
     public long Amount { get; set; }
     public TransactionStatus Status { get; set; }
@@ -23,7 +23,7 @@ public class VerifyPaymentDtoRes
 {
     public class TransactionType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public TransactionStatus Status { get; set; }
         public string Type { get; set; } = null!;
         public long Amount { get; set; }

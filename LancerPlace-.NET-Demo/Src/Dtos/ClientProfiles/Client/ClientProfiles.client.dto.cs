@@ -4,7 +4,7 @@ public class ClientProfileInfoDtoRes
 {
     public class PreferenceType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Title { get; set; } = null!;
     }
     public string? Bio { get; set; } = null!;
@@ -14,7 +14,7 @@ public class UpdateClientProfileDtoReq
 {
     public class PreferenceType
     {
-        public string? Id { get; set; } = null!;
+        public Guid? Id { get; set; } = null!;
         public string Title { get; set; } = null!;
     }
     public string? Bio { get; set; } = null!;

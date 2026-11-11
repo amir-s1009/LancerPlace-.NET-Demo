@@ -9,7 +9,7 @@ public class ApplicationListItemDtoRes
     {
         public class CategoryType
         {
-            public string Id { get; set; } = null!;
+            public Guid Id { get; set; } = null!;
             public string Title { get; set; } = null!;
             public string? ParentId { get; set; } = null!;
         }
@@ -21,10 +21,10 @@ public class ApplicationListItemDtoRes
                 public string LastName { get; set; } = null!;
                 public FileDtoRes? Avatar { get; set; } = null!;
             }
-            public string Id { get; set; } = null!;
+            public Guid Id { get; set; } = null!;
             public UserInfoType UserInfo { get; set; } = null!;
         }
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Title { get; set; } = null!;
         public string Description { get; set; } = null!;
         public List<CategoryType> Categories { get; set; } = [];
@@ -33,7 +33,7 @@ public class ApplicationListItemDtoRes
         public int ApplicationsCount { get; set; }
         public ClientProfileType ClientProfile { get; set; } = null!;
     }
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public long Budget { get; set; }
     public ApplicationStatus Status { get; set; }
     public string Description { get; set; } = null!;
@@ -42,7 +42,7 @@ public class ApplicationListItemDtoRes
 
 public class ApplicationDetailDtoRes
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public ApplicationStatus Status { get; set; }
     public string Description { get; set; } = null!;
     public long Budget { get; set; }

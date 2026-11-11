@@ -41,7 +41,7 @@ public class ProjectListItemDtoRes
 {
     public class CategoryType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Title { get; set; } = null!;
         public string? ParentId { get; set; } = null!;
 
@@ -51,7 +51,7 @@ public class ProjectListItemDtoRes
         public ProjectPromoType Type { get; set; }
         public string? EndsAt { get; set; }
     }
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public string Title { get; set; } = null!;
     public List<CategoryType> Categories { get; set; } = [];
     public ProjectStatus Status { get; set; }
@@ -67,7 +67,7 @@ public class ProjectDetailDtoRes
 {
     public class CategoryType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Title { get; set; } = null!;
         public string? ParentId { get; set; } = null!;
 
@@ -78,7 +78,7 @@ public class ProjectDetailDtoRes
         public string? EndsAt { get; set; }
     }
 
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public string Title { get; set; } = null!;
     public List<CategoryType> Categories { get; set; } = [];
     public ProjectStatus Status { get; set; }

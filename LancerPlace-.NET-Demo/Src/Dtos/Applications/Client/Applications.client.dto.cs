@@ -13,10 +13,10 @@ public class ApplicationListItemDtoRes
             public string LastName { get; set; } = null!;
             public FileDtoRes? Avatar { get; set; } = null!;
         }
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public UserInfoType UserInfo { get; set; } = null!;
     }
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public FreelancerProfileType FreelancerProfile { get; set; } = null!;
     public long Budget { get; set; }
     public string CreatedAt { get; set; } = null!;
@@ -28,10 +28,10 @@ public class ApplicationDetailDtoRes
 {
     public class EndorsementType
     {
-        public string Id { get; set; } = null!;
+        public Guid Id { get; set; } = null!;
         public string Description { get; set; } = null!;
     }
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; } = null!;
     public ApplicationStatus Status { get; set; }
     public string CreatedAt { get; set; } = null!;
     public long Budget { get; set; }
