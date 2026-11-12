@@ -13,4 +13,5 @@ public class ClientProfile
     public ICollection<ProjectPromoSnapshot> ProjectPromoSnapshots { get; set; } = [];
     public ICollection<ClientCollaborationPreference> CollaborationPreferences { get; set; } = [];
     public ICollection<Moderation> Moderations { get; set; } = [];
+    public ICollection<Project> Projects { get; set; } = [];
 }

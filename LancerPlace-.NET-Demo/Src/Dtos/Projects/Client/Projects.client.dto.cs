@@ -43,7 +43,7 @@ public class ProjectListItemDtoRes
     {
         public Guid Id { get; set; }
         public string Title { get; set; } = null!;
-        public string? ParentId { get; set; } = null!;
+        public Guid? ParentId { get; set; }
 
     }
     public class PromotionType
@@ -69,7 +69,7 @@ public class ProjectDetailDtoRes
     {
         public Guid Id { get; set; }
         public string Title { get; set; } = null!;
-        public string? ParentId { get; set; } = null!;
+        public Guid? ParentId { get; set; }
 
     }
     public class PromotionType

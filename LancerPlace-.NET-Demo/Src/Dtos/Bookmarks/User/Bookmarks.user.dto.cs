@@ -10,16 +10,16 @@ public class BookmarkListItemDtoRes
         {
             public Guid Id { get; set; }
             public string Title { get; set; } = null!;
-            public string? ParentId { get; set; } = null!;
+            public Guid? ParentId { get; set; }
         }
         public Guid Id { get; set; }
         public string Title { get; set; } = null!;
-        public string PublishedAt { get; set; } = null!;
+        public string? PublishedAt { get; set; } = null!;
         public List<CategoryType> Categories { get; set; } = [];
         public long Budget { get; set; }
         public int DeadlineDays { get; set; }
     }
     public BookmarkTarget Target { get; set; }
-    public ProjectType Project { get; set; } = null!;
+    public ProjectType? Project { get; set; } = null!;
 
 }

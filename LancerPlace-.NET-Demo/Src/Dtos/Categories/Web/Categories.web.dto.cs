@@ -4,5 +4,5 @@ public class CategoryListItemDtoRes
 {
     public Guid Id { get; set; }
     public string Title { get; set; } = null!;
-    public string? ParentId { get; set; } = null!;
+    public Guid? ParentId { get; set; }
 }

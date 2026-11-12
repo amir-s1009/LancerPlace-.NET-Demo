@@ -18,9 +18,12 @@ public class Project
     [MaxLength(2000, ErrorMessage = "متن توضیحات پروژه خیلی طولانی است")]
     public string Description { get; set; } = null!;
     public Guid CategoryId { get; set; }
+    public Guid ClientProfileId { get; set; }
     public DateTime? UpdatedAt { get; set; }
 
     public Category Category { get; set; } = null!;
+    public ClientProfile ClientProfile { get; set; } = null!;
+
 
     public ICollection<Application> Applications { get; set; } = new List<Application>();
     public ICollection<Spam> Spams { get; set; } = new List<Spam>();
