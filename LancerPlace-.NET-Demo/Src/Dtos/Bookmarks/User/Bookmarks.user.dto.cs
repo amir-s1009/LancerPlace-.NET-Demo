@@ -8,11 +8,11 @@ public class BookmarkListItemDtoRes
     {
         public class CategoryType
         {
-            public Guid Id { get; set; } = null!;
+            public Guid Id { get; set; }
             public string Title { get; set; } = null!;
             public string? ParentId { get; set; } = null!;
         }
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
         public string PublishedAt { get; set; } = null!;
         public List<CategoryType> Categories { get; set; } = [];

@@ -4,7 +4,7 @@ namespace LancerPlace_.NET_Demo.Src.Dtos.Tokens.Client;
 
 public class ActiveTokenDtoRes
 {
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public int Remaining { get; set; }
     public int TokensCount { get; set; }
     public string EndsAt { get; set; } = null!;
@@ -12,7 +12,7 @@ public class ActiveTokenDtoRes
 }
 public class TokenListItemDtoRes
 {
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public int Remaining { get; set; }
     public string EndsAt { get; set; } = null!;
     public TokenPeriod Period { get; set; }

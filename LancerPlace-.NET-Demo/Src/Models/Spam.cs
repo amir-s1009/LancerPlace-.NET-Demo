@@ -1,8 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-using LancerPlace_.NET_Demo.Src.CustomExceptions;
-
 namespace LancerPlace_.NET_Demo.Src.Models;
 public class Spam
 {

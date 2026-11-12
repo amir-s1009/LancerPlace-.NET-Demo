@@ -6,7 +6,7 @@ public class FreelancerProfileInfoDtoRes
 {
     public class SkillType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
     }
     public class CVType

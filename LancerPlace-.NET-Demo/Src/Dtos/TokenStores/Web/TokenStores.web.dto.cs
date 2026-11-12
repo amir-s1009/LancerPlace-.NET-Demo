@@ -4,7 +4,7 @@ namespace LancerPlace_.NET_Demo.Src.Dtos.TokenStores.Web;
 
 public class TokenStoreListItemDtoRes
 {
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public TokenPeriod Period { get; set; }
     public long Price { get; set; }
     public TargetProfile TargetProfile { get; set; }
@@ -12,7 +12,7 @@ public class TokenStoreListItemDtoRes
 }
 public class TokenStoreDetailDtoRes
 {
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public TokenPeriod Period { get; set; }
     public long Price { get; set; }
     public TargetProfile TargetProfile { get; set; }

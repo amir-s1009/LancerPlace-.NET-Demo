@@ -9,6 +9,6 @@ public class ConversationDtoRes
         public string? AvatarUrl { get; set; } = null!;
         public string FreelancerProfileId { get; set; } = null!;
     }
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public MateUserType MateUser { get; set; } = null!;
 }

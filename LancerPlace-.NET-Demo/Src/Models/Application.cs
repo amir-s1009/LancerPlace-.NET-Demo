@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 
-
 namespace LancerPlace_.NET_Demo.Src.Models;
 public class Application
 {

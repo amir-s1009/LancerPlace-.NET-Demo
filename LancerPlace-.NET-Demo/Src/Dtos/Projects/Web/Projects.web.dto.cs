@@ -6,14 +6,14 @@ public class ProjectListItemDtoRes
 {
     public class CategoryType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
         public string? ParentId { get; set; } = null!;
 
     }
     public class ClientType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string? AvatarUrl { get; set; } = null!;
@@ -22,7 +22,7 @@ public class ProjectListItemDtoRes
     {
         public ProjectPromoType Type { get; set; }
     }
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public string Title { get; set; } = null!;
     public List<CategoryType> Categories { get; set; } = [];
     public ProjectStatus Status { get; set; }
@@ -40,21 +40,21 @@ public class ProjectDetailDtoRes
 {
     public class CategoryType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
         public string? ParentId { get; set; } = null!;
 
     }
     public class ClientType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string? AvatarUrl { get; set; } = null!;
     }
 
 
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public string Title { get; set; } = null!;
     public List<CategoryType> Categories { get; set; } = [];
     public ProjectStatus Status { get; set; }

@@ -12,14 +12,14 @@ public class ClientProfileInfoDtoRes
     }
     public class PreferenceType
     {
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
     }
     public class ProjectType
     {
         public class CategoryType
         {
-            public Guid Id { get; set; } = null!;
+            public Guid Id { get; set; }
             public string Title { get; set; } = null!;
             public string? ParentId { get; set; } = null!;
 
@@ -34,15 +34,15 @@ public class ClientProfileInfoDtoRes
                     public string LastName { get; set; } = null!;
                     public FileDtoRes? Avatar { get; set; } = null!;
                 }
-                public Guid Id { get; set; } = null!;
+                public Guid Id { get; set; }
                 public UserInfoType UserInfo { get; set; } = null!;
             }
-            public Guid Id { get; set; } = null!;
+            public Guid Id { get; set; }
             public long Budget { get; set; }
             public FreelancerProfileType FreelancerProfile { get; set; } = null!;
 
         }
-        public Guid Id { get; set; } = null!;
+        public Guid Id { get; set; }
         public string Title { get; set; } = null!;
         public List<CategoryType> Categories { get; set; } = [];
         public long Budget { get; set; }

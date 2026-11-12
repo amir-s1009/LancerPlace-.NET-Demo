@@ -8,7 +8,7 @@ public class PortfolioListItemDtoRes
     {
         public string Url { get; set; } = null!;
     }
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public string Title { get; set; } = null!;
     public PosterType? Poster { get; set; } = null!;
     public string Description { get; set; } = null!;
@@ -17,7 +17,7 @@ public class PortfolioListItemDtoRes
 
 public class PortfolioDetailDtoRes
 {
-    public Guid Id { get; set; } = null!;
+    public Guid Id { get; set; }
     public string Title { get; set; } = null!;
     public string Description { get; set; } = null!;
     public bool IsPublic { get; set; }

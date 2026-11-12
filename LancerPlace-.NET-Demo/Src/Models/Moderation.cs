@@ -1,6 +1,5 @@
-
-
 namespace LancerPlace_.NET_Demo.Src.Models;
+
 public class Moderation
 {
     public Guid Id { get; set; }
