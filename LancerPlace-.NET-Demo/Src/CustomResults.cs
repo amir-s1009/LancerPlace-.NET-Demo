@@ -14,18 +14,16 @@ public class CustomResult : IResult
     public bool Ok { get; }
     public int Code { get; }
     public string? Message { get; }
-    public MetaType? Meta { get; }
 
     public CustomResult(
         bool ok,
         int code,
-        string? message = null,
-        MetaType? meta = null)
+        string? message = null
+    )
     {
         Ok = ok;
         Code = code;
         Message = message;
-        Meta = meta;
     }
 
     public async Task ExecuteAsync(HttpContext httpContext)

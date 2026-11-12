@@ -1,6 +1,8 @@
 
 using LancerPlace.NET.Demo.Src.Data;
+using LancerPlace_.Net_Demo.Endpoints.Bookmarks.User;
 using LancerPlace_.NET_Demo.Src;
+using LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,8 @@ builder.Services.AddDbContext<Db>(options =>
     );
 });
 
+builder.Services.AddScoped<BookmarksUserService>();
+
 var app = builder.Build();
 
 app.UseExceptionHandler();
@@ -27,5 +31,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 app.UseHttpsRedirection();
+
+app.MapBookmarksUserEndpoints();
 
 app.Run();

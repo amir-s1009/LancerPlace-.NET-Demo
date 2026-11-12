@@ -6,9 +6,9 @@ using System.Net;
 
 namespace LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
 
-public class BookmarksUserService
+public class BookmarksUserService(Db db)
 {
-    public async Task ToggleBookmark(Guid userId, BookmarkTarget target, Guid targetId, Db db)
+    public async Task ToggleBookmark(Guid userId, BookmarkTarget target, Guid targetId)
     {
         if (target == BookmarkTarget.PROJECT)
         {
@@ -34,7 +34,7 @@ public class BookmarksUserService
         await db.SaveChangesAsync();
     }
 
-    public async Task<List<BookmarkListItemDtoRes>> GetAllBookmarks(Guid userId, BookmarkTarget target, Db db)
+    public async Task<List<BookmarkListItemDtoRes>> GetAllBookmarks(Guid userId, BookmarkTarget? target)
     {
 
         List<BookmarkListItemDtoRes> bookmarks = await db.Bookmarks
