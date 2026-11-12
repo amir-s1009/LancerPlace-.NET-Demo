@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.Net-Demo\\LancerPlace-.NET-Demo.csproj": {}
+    "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo.csproj": {}
   },
   "projects": {
-    "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.Net-Demo\\LancerPlace-.NET-Demo.csproj": {
+    "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.Net-Demo\\LancerPlace-.NET-Demo.csproj",
+        "projectUniqueName": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo.csproj",
         "projectName": "LancerPlace-.NET-Demo",
-        "projectPath": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.Net-Demo\\LancerPlace-.NET-Demo.csproj",
+        "projectPath": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.Net-Demo\\obj\\",
+        "outputPath": "E:\\portfolios\\LancerPlace-.NET-Demo\\LancerPlace-.NET-Demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"

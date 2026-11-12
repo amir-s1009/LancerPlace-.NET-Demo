@@ -1,7 +1,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace LancerPlace.NET.Demo.Src.Enums;
+namespace LancerPlace_.NET_Demo.Src;
 
 [JsonConverter(typeof(JsonStringEnumConverter<ProjectStatus>))]
 public enum ProjectStatus

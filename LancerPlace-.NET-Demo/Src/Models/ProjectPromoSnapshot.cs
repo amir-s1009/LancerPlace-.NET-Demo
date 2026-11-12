@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using LancerPlace.NET.Demo.Src.Enums;
+
 
 namespace LancerPlace_.NET_Demo.Src.Models;
 public class ProjectPromoSnapshot
