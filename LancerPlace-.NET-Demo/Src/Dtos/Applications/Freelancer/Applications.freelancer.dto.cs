@@ -58,7 +58,7 @@ public class CreateApplicationDtoReq
         public int DeadlineDays { get; set; }
         public string Description { get; set; } = null!;
     }
-    public string ProjectId { get; set; } = null!;
+    public Guid ProjectId { get; set; }
     public ApplicationType Application { get; set; } = null!;
 }
 

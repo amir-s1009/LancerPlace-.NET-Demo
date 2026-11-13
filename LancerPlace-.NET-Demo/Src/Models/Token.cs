@@ -22,7 +22,7 @@ public class Token
     public FreelancerProfile? FreelancerProfile { get; set; }
     public TokenSnapshot? TokenSnapshot { get; set; } = null!;
 
-    public bool IsExpired()
+    private bool IsExpired()
     {
         return EndsAt < new DateTime();
     }

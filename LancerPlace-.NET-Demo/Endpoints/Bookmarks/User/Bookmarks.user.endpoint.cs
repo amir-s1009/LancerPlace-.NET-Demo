@@ -9,7 +9,7 @@ public static class BookmarksUserEndpoints
 {
     public static IEndpointRouteBuilder MapBookmarksUserEndpoints(this IEndpointRouteBuilder app)
     {
-        var group = app.MapGroup("/bookmarks/user").RequireAuthorization();
+        var group = app.MapGroup("/bookmarks/user").RequireAuthorization("USER");
 
         group.MapGet("/toggleBookmark/{target}/{targetId}", Toggle);
         group.MapGet("/getAllBookmarks", GetAll);
