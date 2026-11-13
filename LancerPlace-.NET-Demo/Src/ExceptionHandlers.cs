@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Diagnostics;
 
 namespace LancerPlace_.NET_Demo.Src;
@@ -16,6 +17,11 @@ public class GlobalExceptionHandler(
             ApplicationException ex => ((int)ex.Code, ex.Message),
 
             DomainException ex => (
+                StatusCodes.Status400BadRequest,
+                ex.Message
+            ),
+
+            ValidationException ex => (
                 StatusCodes.Status400BadRequest,
                 ex.Message
             ),
