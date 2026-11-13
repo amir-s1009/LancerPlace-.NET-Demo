@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LancerPlace-.NET-Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d10456fe1032fff28214e71408a6cce2e06cad04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f0843c83d7d039be130d2eebf208422d2a7520")]
 [assembly: System.Reflection.AssemblyProductAttribute("LancerPlace-.NET-Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LancerPlace-.NET-Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
