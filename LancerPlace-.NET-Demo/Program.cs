@@ -11,6 +11,12 @@ builder.Services.AddOpenApi();
 builder.Services.AddCors();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("USER", (policy) => policy.RequireClaim("role", "USER"));
+    options.AddPolicy("ADMIN", (policy) => policy.RequireClaim("role", "ADMIN"));
+});
 builder.Services.AddDbContext<Db>(options =>
 {
     options.UseNpgsql(
@@ -31,6 +37,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapBookmarksUserEndpoints();
 
