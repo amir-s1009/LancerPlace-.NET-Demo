@@ -11,4 +11,5 @@ public class File
     public long SizeByte { get; set; }
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public DateTime CreatedAt { get; set; }
+    
 }

@@ -3,7 +3,7 @@ using LancerPlace_.NET_Demo.Src.Dtos.Bookmarks.User;
 using LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LancerPlace_.Net_Demo.Endpoints.Bookmarks.User;
+namespace LancerPlace_.NET_Demo.Endpoints.Bookmarks.User;
 
 public static class BookmarksUserEndpoints
 {

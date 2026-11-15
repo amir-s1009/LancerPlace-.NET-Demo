@@ -2,7 +2,7 @@ using LancerPlace_.NET_Demo.Src;
 using LancerPlace_.NET_Demo.Src.Dtos.Applications.Freelancer;
 using LancerPlace_.NET_Demo.Src.Services.Applications.Freelancer;
 
-namespace LancerPlace_.Net_Demo.Endpoints.Applications.Freelancer;
+namespace LancerPlace_.NET_Demo.Endpoints.Applications.Freelancer;
 
 public static class ApplicationsFreelancerEndpoints
 {

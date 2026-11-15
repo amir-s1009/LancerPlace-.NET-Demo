@@ -17,4 +17,5 @@ public class Message
 
     public User User { get; set; } = null!;
     public Conversation Conversation { get; set; } = null!;
+    public List<File> Files { get; set; } = [];
 }

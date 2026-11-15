@@ -1,10 +1,12 @@
 
 using LancerPlace.NET.Demo.Src.Data;
-using LancerPlace_.Net_Demo.Endpoints.Applications.Freelancer;
-using LancerPlace_.Net_Demo.Endpoints.Bookmarks.User;
+using LancerPlace_.NET_Demo.Endpoints.Applications.Freelancer;
+using LancerPlace_.NET_Demo.Endpoints.Bookmarks.User;
+using LancerPlace_.NET_Demo.Endpoints.Messages.User;
 using LancerPlace_.NET_Demo.Src;
 using LancerPlace_.NET_Demo.Src.Services.Applications.Freelancer;
 using LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
+using LancerPlace_.NET_Demo.Src.Services.Messages;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +30,7 @@ builder.Services.AddDbContext<Db>(options =>
 
 builder.Services.AddScoped<BookmarksUserService>();
 builder.Services.AddScoped<ApplicationsFreelancerService>();
+builder.Services.AddScoped<MessagesUserService>();
 
 var app = builder.Build();
 
@@ -45,5 +48,6 @@ app.UseAuthorization();
 
 app.MapBookmarksUserEndpoints();
 app.MapApplicationsFreelancerEndpoints();
+app.MapMessagesUserEndpoints();
 
 app.Run();

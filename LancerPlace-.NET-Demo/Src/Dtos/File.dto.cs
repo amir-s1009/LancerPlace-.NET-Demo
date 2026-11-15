@@ -6,7 +6,7 @@ public class FileDtoReq
     public string Key { get; set; } = null!;
     public string Url { get; set; } = null!;
     public string MimeType { get; set; } = null!;
-    public string SizeByte { get; set; } = null!;
+    public long SizeByte { get; set; }
     public string OriginalName { get; set; } = null!;
 }
 public class FileDtoRes
@@ -15,6 +15,6 @@ public class FileDtoRes
     public string Key { get; set; } = null!;
     public string Url { get; set; } = null!;
     public string MimeType { get; set; } = null!;
-    public string SizeByte { get; set; } = null!;
+    public long SizeByte { get; set; }
     public string OriginalName { get; set; } = null!;
 }

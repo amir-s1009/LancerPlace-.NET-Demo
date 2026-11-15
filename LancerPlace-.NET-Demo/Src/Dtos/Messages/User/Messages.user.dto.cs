@@ -11,7 +11,7 @@ public class CreateMessageDtoReq
         public string? Text { get; set; } = null!;
         public FileDtoReq? File { get; set; } = null!;
     }
-    public string ConversationId { get; set; } = null!;
+    public Guid ConversationId { get; set; }
     public MessageSchema Message { get; set; } = null!;
 }
 
