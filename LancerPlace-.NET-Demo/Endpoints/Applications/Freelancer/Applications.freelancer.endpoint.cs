@@ -1,3 +1,4 @@
+using LancerPlace_.NET_Demo.Attributes;
 using LancerPlace_.NET_Demo.Src;
 using LancerPlace_.NET_Demo.Src.Dtos.Applications.Freelancer;
 using LancerPlace_.NET_Demo.Src.Services.Applications.Freelancer;
@@ -8,7 +9,9 @@ public static class ApplicationsFreelancerEndpoints
 {
     public static IEndpointRouteBuilder MapApplicationsFreelancerEndpoints(this IEndpointRouteBuilder app)
     {
-        var group = app.MapGroup("/applications/freelancer").RequireAuthorization("USER");
+        var group = app.MapGroup("/applications/freelancer")
+        .WithMetadata(new PreventConcurrentRequestsAttribute())
+        .RequireAuthorization("USER");
 
         group.MapPost("/createApplication", Create);
 

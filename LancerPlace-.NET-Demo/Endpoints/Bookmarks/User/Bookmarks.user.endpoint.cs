@@ -1,3 +1,4 @@
+using LancerPlace_.NET_Demo.Attributes;
 using LancerPlace_.NET_Demo.Src;
 using LancerPlace_.NET_Demo.Src.Dtos.Bookmarks.User;
 using LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
@@ -9,7 +10,9 @@ public static class BookmarksUserEndpoints
 {
     public static IEndpointRouteBuilder MapBookmarksUserEndpoints(this IEndpointRouteBuilder app)
     {
-        var group = app.MapGroup("/bookmarks/user").RequireAuthorization("USER");
+        var group = app.MapGroup("/bookmarks/user")
+        .WithMetadata(new PreventConcurrentRequestsAttribute())
+        .RequireAuthorization("USER");
 
         group.MapGet("/toggleBookmark/{target}/{targetId}", Toggle);
         group.MapGet("/getAllBookmarks", GetAll);

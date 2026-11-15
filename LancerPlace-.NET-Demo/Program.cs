@@ -3,6 +3,7 @@ using LancerPlace.NET.Demo.Src.Data;
 using LancerPlace_.NET_Demo.Endpoints.Applications.Freelancer;
 using LancerPlace_.NET_Demo.Endpoints.Bookmarks.User;
 using LancerPlace_.NET_Demo.Endpoints.Messages.User;
+using LancerPlace_.NET_Demo.Middlewares;
 using LancerPlace_.NET_Demo.Src;
 using LancerPlace_.NET_Demo.Src.Services.Applications.Freelancer;
 using LancerPlace_.NET_Demo.Src.Services.Bookmarks.User;
@@ -43,6 +44,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 app.UseHttpsRedirection();
+app.UseMiddleware<PreventConcurrentRequestsMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 
